@@ -1,7 +1,29 @@
+let dayEl = document.querySelector(".day");
+let dateToday = document.querySelector(".date-today");
+let dateEl = document.querySelector(".date");
+let monthEl = document.querySelector(".month");
+let yearEl = document.querySelector(".year");
 let hr = document.getElementById("hour");
 let min = document.getElementById("min");
 let sec = document.getElementById("sec");
 
+let date = new Date();
+var weekday = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+dateEl.innerHTML = date.getDate();
+monthEl.innerHTML = date.getMonth() + 1;
+yearEl.innerHTML = date.getFullYear();
+
+dayEl.innerHTML = weekday[date.getDay()];
+
+// dateToday.innerHTML = dDate, "/", month, "/", year;
 function displayTime() {
   let date = new Date();
 

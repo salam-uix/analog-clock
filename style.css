@@ -59,3 +59,22 @@ body {
   height: var(--h);
   border-radius: 8px;
 }
+.day {
+  position: absolute;
+  bottom: 85px;
+  background: #2a2a2a;
+  padding: 2px 3px;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.date-today {
+  position: absolute;
+  bottom: 70px;
+  z-index: -1;
+  padding: 2px 3px;
+  border-radius: 2px;
+  display: flex;
+  gap: 4px;
+  font-size: 10px;
+}
